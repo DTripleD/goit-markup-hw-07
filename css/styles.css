@@ -115,20 +115,39 @@ Header
 =============================================================================
 */
 
-.page-header {
+/* .page-header {
     border-bottom: 1px solid #ECECEC;
+}
+
+.pages {
+    display: flex;
 }
 
 .pages__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.pages .pages__link.pages__link--current {
+.pages__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--brand-black);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pages__link--current {
     color: var(--brand-color);
     position: relative;
 }
 
-.pages .pages__link.pages__link--current::after {
+.pages__link--current::after {
     content: "";
     position: absolute;
     background-color: var(--brand-color);
@@ -140,11 +159,20 @@ Header
 
 }
 
-.pages {
-    display: flex;
+.pages__link:hover,
+.pages__link:focus {
+    color: var(--brand-color);
 }
 
-.pages__link,
+.page-header__contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts__info:first-child {
+    margin-right: 50px;
+}
+
 .contacts__item {
     display: block;
     padding-top: 32px;
@@ -160,32 +188,17 @@ Header
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts__item{
+.contacts__item {
     display: flex;
     align-items: center;
     gap: 10px;
     color: var(--title-gray);
 }
 
-.pages__link:hover,
-.pages__link:focus,
-.tel-footer:hover,
-.tel-footer:focus,
 .contacts__item:hover,
-.contacts__item:focus,
-.adress:hover,
-.adress:focus {
+.contacts__item:focus {
     color: var(--brand-color);
-}
-
-.contacts__info:first-child {
-    margin-right: 50px;
-}
-
-.page-header__contacts {
-    display: flex;
-    margin-left: auto;
-}
+} */
 
 /*
 =============================================================================
@@ -200,12 +213,8 @@ Hero
 =============================================================================
 */
 
-.hero,
-footer {
+/* .hero{
     background-color: var(--background-hero);
-}
-
-.hero{
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -237,9 +246,9 @@ footer {
     text-transform: uppercase;
 
     color: var(--white);
-}
+} */
 
-.hero__btn,
+/* .hero__btn,
 .subscribe__btn,
 .modal__btn {
     display: block;
@@ -258,7 +267,7 @@ footer {
 
     color: var(--white);
     background-color: var(--brand-color);
-}
+} */
 
 /* 
 =============================================================================
@@ -266,7 +275,7 @@ Benefits
 =============================================================================
 */
 
-.benefits__list {
+/* .benefits__list {
     display: flex;
     align-items: flex-start;
 }
@@ -279,7 +288,7 @@ Benefits
     margin-right: 30px;
 }
 
-.benefits__title, .work__dscr {
+.benefits__title {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -291,7 +300,7 @@ Benefits
     line-height: 1.71;
 
     color: var(--title-gray);
-}
+} */
 
 /* 
 =============================================================================
@@ -299,14 +308,12 @@ Works
 =============================================================================
 */
 
-.work {
+/* .work {
     display: flex;
     flex-direction: column;
 }
 
-.work__title,
-.team__title,
-.clients__title {
+.work__title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -335,11 +342,14 @@ Works
 
     color: #FFFFFF;
     background-color: rgba(47, 48, 58, 0.8);
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
 }
 
 .work__item {
     position: relative;
-}
+} */
 
 /* 
 =============================================================================
@@ -347,13 +357,20 @@ Team
 =============================================================================
  */
 
-.team {
+/* .team {
     background: var(--background);
 }
 
 .team__container {
     display: flex;
     flex-direction: column;
+}
+
+.team__title{
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .team__list {
@@ -391,7 +408,7 @@ Team
     color: var(--title-gray);
 
     margin-bottom: 16px;
-}
+} */
 
 /* 
 =============================================================================
@@ -399,7 +416,7 @@ Footer
 =============================================================================
 */
 
-.footer__container {
+/* .footer__container {
     display: flex;
     align-items: baseline;
 }
@@ -407,6 +424,7 @@ Footer
 .footer{
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: var(--background-hero);
 }
 
 .logo-footer {
@@ -426,6 +444,16 @@ Footer
     color: var(--white);
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adress:hover,
+.adress:focus {
+    color: var(--brand-color);
+}
+
+.tel-footer:hover,
+.tel-footer:focus {
+    color: var(--brand-color);
 }
 
 .tel-footer {
@@ -501,7 +529,7 @@ Footer
 .footer__form{
     display: flex;
     justify-content: center;
-}
+} */
 
 /*
 =============================================================================
@@ -509,7 +537,7 @@ Portfolio page
 =============================================================================
 */
 
-.portfolio {
+/* .portfolio {
     display: flex;
     flex-direction: column;
 }
@@ -624,7 +652,7 @@ Portfolio page
 .portfolio__link:hover .overlay__text,
 .portfolio__link:focus .overlay__text {
     transform: translateY(0)
-}
+} */
 
 /*
 =============================================================================
@@ -632,8 +660,7 @@ Icons
 =============================================================================
 */
 
-
-.contacts__icons{
+/* .contacts__icons{
     fill: currentColor;
 }
 
@@ -685,6 +712,13 @@ Icons
 .clients__item{
     height: 92px;
     width: 170px;
+}
+
+.clients__title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .clients__link{
@@ -751,7 +785,7 @@ Icons
 .footer__wrapper{
     display: flex;
     flex-direction: column;
-}
+} */
 
 /*
 =============================================================================
@@ -759,7 +793,7 @@ Modal window
 =============================================================================
 */
 
-.backdrop {
+/* .backdrop {
     position: fixed;
     height: 100%;
     width: 100%;
@@ -973,5 +1007,5 @@ Modal window
 .modal__btn:hover,
 .modal__btn:focus{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+} */
 
