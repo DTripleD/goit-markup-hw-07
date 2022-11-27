@@ -1,11 +1,11 @@
-body{
+/* body{
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.03em;
     background-color: #FFFFFF;
     color: #212121;
-}
+} */
 
-:root{
+/* :root{
     --black: #000000;
     --brand-color: #2196F3;
     --white:#FFFFFF;
@@ -15,9 +15,9 @@ body{
     --border: #EEEEEE;
     --brand-black: #212121;
     --icons: #AFB1B8;
-}
+} */
 
-.container {
+/* .container {
     display: flex;
     width: 1200px;
     padding-left: 15px;
@@ -30,14 +30,14 @@ body{
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-}
+} */
 
 /* 
 =============================================================================
 Reset start 
 =============================================================================
 */
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -77,7 +77,7 @@ img{
 
 .no-padding-top{
     padding-top: 0;
-}
+} */
 /* 
 =============================================================================
 Reset end 
@@ -90,7 +90,7 @@ Logo
 =============================================================================
 */
 
-.logo__accent {
+/* .logo__accent {
     color: var(--black); 
 }
 
@@ -107,7 +107,7 @@ Logo
     line-height: 1.19;
 
     color: var(--brand-color);
-}
+} */
 
 /*
 =============================================================================
